@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background with GIF</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .bg {
+            /* The image used */
+            background-image: url('https://www.icegif.com/wp-content/uploads/2023/08/icegif-354.gif'); /* Replace 'your-gif.gif' with the actual path or URL to your GIF */
+
+            /* Full height */
+            height: 100%; 
+
+            /* Control the width and height of the background image */
+            background-size: cover;
+
+            /* Center the background image inside the <div> element */
+            background-position: center;
+
+            /* Add a dark overlay if needed */
+            /* background: rgba(0, 0, 0, 0.5); */
+        }
+
+        .header {
+            color: white;
+            text-align: center;
+            font-size: 64px; /* You can adjust the size */
+            margin-top: 20px; /* Adjust the top margin as needed */
+        }
+
+        .content {
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 10%; /* Position more to the left */
+            transform: translateY(-50%); /* Only translate vertically */
+            width: 40%; /* Adjust width for shorter paragraphs */
+        }
+
+        .right-image {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            width: 250px; /* You can adjust the width */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .section {
+            margin: 20px 0;
+            text-align: left; /* Align text to the left */
+        }
+
+        .section h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg"></div>
+
+    <!-- Add the welcome heading here -->
+    <div class="header">
+        WELCOME!
+    </div>
+
+    <!-- Main content area -->
+    <div class="content">
+        <!-- Section for Personal Introduction -->
+        <div class="section">
+            <h2>Personal Introduction</h2>
+            <p>Hi! My name is Darell. I just finished my GCSEs and I am looking forward to going to sixth form in Septemer. My hobbies include swimming, playing the piano, a bit of the guitar, and cycling</p>
+        </div>
+
+        <!-- Section for Why I am interested in STEM -->
+        <div class="section">
+            <h2>Why I am interested in STEM</h2>
+            <p>When I was younger I wanted to go to space so I thought why don't I just build a rocket there and if I wanted to do that I would need to get on with learning some science. on a serious note, I love that the answers to the universe is already there, we just need to discover it.</p>
+        </div>
+    </div>
+
+    <!-- Add your image here -->
+    <img src="C:\Users\User\Downloads\pfp.jpg" alt="Right side image" class="right-image"> <!-- Replace 'path-to-your-image.jpg' with the actual path to your image -->
+
+</body>
+</html>
